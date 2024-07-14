@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9)),url(weather.jpg);
+    height: 100vh;
+    width: auto;
+
+}
+
+.weather-app{
+    background-color: rgba(255, 255, 255, 0.597);
+    max-width: 500px;
+    padding: 30px;
+    margin:10px auto;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+.serch-form{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+input[type="text"]{
+    padding: 20px;
+    border-radius: 15px;
+    height: 3.5rem;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    width: 90%;
+}
+.search-btn{
+    border: 2px solid #3498db;
+    padding: 20px;
+    border-radius: 15px;
+    height: 3.5rem;
+    width: 10%;
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition:  background-color 0.3s ease;
+}
+.search-btn:hover{
+    background-color: #3498db;
+}
+.city-date-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    flex-direction: column;
+}
+.city-date-section h2{
+    font-size: 3rem;
+    opacity: 0.8;
+}
+.city-date-section .date{
+    background-color: #c3eaf4cb;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+.tempreture-info{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.tempreture-info .description{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+.description i{
+    font-size: 1.5rem;
+}
+.description .tempreture-text{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.temp{
+    font-size: 6rem;
+}
+.additional-info{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+}
+.wind-info,
+.humidity-info,
+.visiblity-info
+{
+    height: 150px;
+    width: 120px;
+    background-color:#e4d2daa8;
+    border-radius: 15px;
+    flex-direction: column;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   padding: 20px 10px;
+   gap: 20px;
+}
+.wind-info i{
+    font-size: 2.5rem;
+}
+.humidity-info i{
+    font-size: 2.5rem;
+}
+.visiblity-info i{
+    font-size: 2.5rem;
+}
+.wind-speed,
+.humidity-speed,
+.visibility-speed{
+    margin-bottom: 3px;
+}
+.wind-label,
+.humidity-label,
+.visibility-label{
+    font-size: 1em;
+    font-weight: 400;
+}
+
